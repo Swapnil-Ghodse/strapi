@@ -1,12 +1,17 @@
-import { useGlobalContext } from "./Context"
+import Hero from "./component/Hero"
+import Navbar from "./component/Navbar"
+import Sidebar from "./component/Sidebar"
+import Submenu from "./component/Submenu"
 
 function App() {
-  const {isSidebaropen, openSidebar} = useGlobalContext();
-
-  console.log(isSidebaropen)
   return (
-    <h2>Strapi</h2>
-  )
+    <main>
+      <Navbar />
+      <Hero />
+      <Sidebar />
+      <Submenu />
+    </main>
+    )
 }
 
 export default App
